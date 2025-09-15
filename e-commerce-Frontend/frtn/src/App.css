@@ -1,0 +1,489 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Full page background */
+.login-page {
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Form box */
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-box p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Inputs */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #7a5ee0;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #7a5ee0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #6147c0;
+}
+
+/* Footer */
+.footer-note {
+  margin-top: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-note a {
+  color: #7a5ee0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-page {
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.register-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.register-box h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.register-box p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #7a5ee0;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #7a5ee0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #6147c0;
+}
+
+.footer-note {
+  margin-top: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-note a {
+  color: #7a5ee0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark input,
+body.dark button {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+}
+
+
+/* This is for responsive design */
+
+/* Base Style */
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form Inputs */
+.login-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-form p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* ✅ Responsive Breakpoints */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 14px;
+    padding: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .login-form h2 {
+    font-size: 22px;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 14px;
+  }
+}
+
+/* ✅ Optional: Bigger screens */
+@media (min-width: 1200px) {
+  .form-container {
+    max-width: 500px;
+  }
+}
+
+/* Base styling (desktop-first or balanced) */
+.login-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--bg-color);
+}
+
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-form input,
+.login-form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* 🌐 Tablet Devices */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+}
+
+/* 📱 Mobile Phones */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}
+
+/* ⌚ Apple Watch / Ultra Small Devices */
+@media (max-width: 400px) {
+  .form-container {
+    padding: 0.5rem;
+    max-width: 100%;
+  }
+
+  .login-form h2 {
+    font-size: 1.2rem;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+
+  .login-form p {
+    font-size: 0.75rem;
+  }
+}
+
+:root {
+  --bg-color: #f5f5f5;
+  --card-bg: #ffffff;
+}
+.dark {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+}
+
+.featured-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--bg-color);
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.product-card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: var(--card-bg);
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.product-card p {
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.product-card button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* App.css */
+:root {
+  --bg-color: #fff;
+  --text-color: #333;
+  --border-color: #ccc;
+  --card-bg: #f9f9f9;
+}
+
+.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --border-color: #444;
+  --card-bg: #2c2c2c;
+}
+
+:root {
+  --footer-bg: #f4f4f4;
+  --text-color: #222;
+  --border-color: #ccc;
+}
+
+.dark-mode {
+  --footer-bg: #1a1a1a;
+  --text-color: #eee;
+  --border-color: #444;
+}
